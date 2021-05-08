@@ -1,0 +1,28 @@
+type: GenericSmelter
+name: Magnesium Forge
+description: Cools Molten Magnesium to create magnesium
+liquidCapacity: 50
+size: 2
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 60
+updateEffect: lightningShoot
+consumes: {
+  power: 0.7
+  liquid: {
+    liquid: molten-magnesium
+    amount: 0.05
+  }
+}
+requirements: [
+  lead/50
+  thorium/80
+  silicon/60
+  silver/50
+]
+category: crafting
+research: silver-crucible
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: magnesium/2

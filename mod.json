@@ -1,0 +1,6 @@
+name: "AA^"
+displayName: "[orange]A[gold]A" //what displays in the mod selection menu
+author: "NerdyDarkAssassin"
+description: "A simple mod. Demonstrates how to make[accent] new ores[] and[orange] machines.[]"
+version: "1.0"
+minGameVersion: 115

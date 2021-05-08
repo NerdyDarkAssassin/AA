@@ -1,0 +1,31 @@
+type: GenericCrafter
+name: MgAl Round Factory
+description: 
+liquidCapacity: 50
+size: 2
+hasPower: false
+hasLiquids: true
+hasItems: true
+craftTime: 60
+updateEffect: missileTrail
+consumes: {
+    item: mgal-flakes
+  liquid: {
+    liquid: liquid-plastanium
+    amount: 0.25
+  }
+}
+requirements: [
+  lead/50
+  thorium/80
+  silicon/60
+  silver/50
+]
+category: crafting
+research: silver-crucible
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: {
+  item: maround
+  amount: 1
+}

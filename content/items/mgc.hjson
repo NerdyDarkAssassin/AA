@@ -1,0 +1,6 @@
+type: material
+name: Alloy-F
+description: An Incendiary Alloy.
+hardness: 2
+cost: 2
+color: ffffff

@@ -1,0 +1,16 @@
+{
+        "outputItem": {"item": "plastanium", "amount": 0}
+	"outputLiquid": { "liquid": "liquid-plastanium", "amount": 15 },
+	"consumes": {
+		"power": 3.0,
+		"liquid": {
+			"liquid": "oil",
+			"amount": 0.25
+		},
+		"items": {
+			"items": [
+				{ "item": "titanium", "amount": 2 }
+			]
+		}
+	}
+}

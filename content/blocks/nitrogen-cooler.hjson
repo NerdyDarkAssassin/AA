@@ -1,0 +1,32 @@
+type: GenericSmelter
+name: Nitrogen Generator
+description: Condenses nitrogen from the air.
+liquidCapacity: 50
+size: 2
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 240
+updateEffect: freezing
+consumes: {
+  power: 0.7
+  item: pyratite
+  liquid: {
+    liquid: cryofluid
+    amount: 0.1
+  }
+}
+requirements: [
+  lead/50
+  thorium/80
+  silicon/60
+  silver/50
+]
+category: crafting
+research: silver-crucible
+idleSound: respawning
+idleSoundVolume: 0.5
+outputLiquid: {
+  liquid: liquid-nitrogen
+  amount: 1
+}

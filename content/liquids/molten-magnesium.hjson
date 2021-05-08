@@ -1,0 +1,7 @@
+name: Molten Magnesium
+description: Magnesium but very hot. And liquid. Just don't let it spill and you'll be golden.
+flammability: 1.5
+temperature: 1.5
+viscosity: 0.6
+effect: melting
+color: a4a2bd

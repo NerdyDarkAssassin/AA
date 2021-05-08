@@ -1,0 +1,5 @@
+type: resource
+name: MgAl Powder
+description: Powdered form of MgAl Alloy. Used for ammunition.
+color: ffffff
+flammability: 1.25

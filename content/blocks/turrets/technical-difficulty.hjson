@@ -1,0 +1,53 @@
+type: burstTurret
+name: Technical Difficulty
+description: lol
+health: 400
+size: 2
+range: 500
+inaccuracy: 0.5
+rotatespeed: 5
+shootSound: gun
+heatColor:FFFFFF
+reload: 180
+shots: 2
+burstSpacing: 0
+xrand: 600
+
+
+ammo: {
+
+
+  maround: {              
+              type: missileBulletType
+              speed: 100f
+              damage: 5
+	      splashDamage: 30
+	      splashDamageRadius: 10
+              frontColor: ffd2ae
+              backColor: e58956
+              bulletWidth: 8f
+              bulletHeight: 8f
+              trailColor: b6c6fd
+              weaveScale: 8f
+              weaveMag: 50f
+              lifetime: 20f
+              explodeRange: 0.5   
+              fragBullet: {
+                       type: healBulletType
+                       status: burning
+                       lifetime: 0f
+                       statusDuration: 1000
+                       lightining:500
+                       lightningLength:5        		       
+                          } fragBullets: 8
+           }
+
+
+
+}
+requirements: [
+  silver/40
+  copper/70
+]
+category: turret
+research: duo

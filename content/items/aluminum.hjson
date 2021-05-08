@@ -1,0 +1,6 @@
+type: material
+name: Aluminum
+description: A metal. Used for weapons and aircraft parts.
+flammability: 0.3
+cost: 2.5
+color: ffffff

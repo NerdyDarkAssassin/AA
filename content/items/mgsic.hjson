@@ -1,0 +1,5 @@
+type: resource 
+name: Alloy-M
+description: An alloy of Silicon, Graphite and Magnesium.
+cost: 2
+color: 454545

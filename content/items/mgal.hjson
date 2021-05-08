@@ -1,0 +1,5 @@
+type: resource
+name: MgAl Alloy
+description: A strong and Light alloy used for aircrafts and Weapons.
+color: ffffff
+flammability: 0.85

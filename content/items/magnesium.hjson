@@ -1,0 +1,6 @@
+type: material
+name: Magnesium
+description: A white metal. Way too flammable.
+flammability: 1.5
+cost: 2.5
+color: ffffff

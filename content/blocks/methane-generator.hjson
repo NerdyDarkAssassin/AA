@@ -1,0 +1,31 @@
+type: GenericSmelter
+name: Methane Generator
+description: Creates Methane from Oil
+liquidCapacity: 50
+size: 2
+hasPower: true
+hasLiquids: true
+hasItems: true
+craftTime: 60
+updateEffect: missileTrail
+consumes: {
+  power: 0.7
+  liquid: {
+    liquid: oil
+    amount: 0.033333
+  }
+}
+requirements: [
+  lead/50
+  thorium/80
+  silicon/60
+  silver/50
+]
+category: crafting
+research: silver-crucible
+idleSound: respawning
+idleSoundVolume: 0.5
+outputLiquid: {
+  liquid: methane
+  amount: 1.5
+}

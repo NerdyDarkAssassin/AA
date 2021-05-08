@@ -1,0 +1,53 @@
+type: itemTurret
+name: Splash
+description: So much everywhere all the time.
+health: 200
+size: 1
+reload: 4
+range: 100
+inaccuracy: 2
+rotatespeed: 12
+ammo: {
+  metaglass: {
+    type: BombBulletType
+    damage: 5
+  }
+
+  plastanium: {
+    status: melting 
+    sratusDuration: 10000000    
+    damage: 6
+  }
+  surge-alloy: {
+    speed: 2.5
+    lifetime: 60
+    splashDamage: 5
+    splashDamageRadius: 20
+    bulletWidth: 8
+    bulletHeight: 10
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    frontColor: ffd800
+    damage: 18
+    fragBullet: {
+                 speed: 3
+                 lifetime: 10
+                 damage: 8
+                 despawnEffect: ballfire
+                 statusEffect: tarred
+                 statusDuration: 1500
+		 fragbullet: {
+                             statusEffect: burning
+                             } fragbullets: 1 
+                } fragBullets: 50
+  }
+  aluminum: {
+    bullet: standardThoriumBig
+  }
+}
+requirements: [
+  silver/40
+  copper/70
+]
+category: turret
+research: duo

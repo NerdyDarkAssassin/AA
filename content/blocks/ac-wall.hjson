@@ -1,0 +1,12 @@
+name: Alloy-C Wall
+description: Regenerates health and Increases its max health over time.
+type: Wall
+health: 600
+size: 2
+requirements: [
+  ac/60
+  phase-fabric/30
+  thorium/80
+]
+category: defense
+research: copper-wall

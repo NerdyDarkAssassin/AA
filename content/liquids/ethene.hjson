@@ -1,0 +1,7 @@
+name: Ethene
+description: Ethene gas. Can be used as ammo or used to make superglue.
+flammability: 0.5
+temperature: 0.3
+viscosity: 0.1
+effect: melting
+color: a4a2bd

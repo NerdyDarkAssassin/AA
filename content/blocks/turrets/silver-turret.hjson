@@ -1,0 +1,26 @@
+type: LiquidTurret
+name: Silver Turret
+description: Sprays useless silver bullets everywhere. What a mess.
+health: 200
+size: 2
+reload: 4
+range: 100
+inaccuracy: 2
+rotatespeed: 12
+ammo: {
+  methane: {
+    type: BombBulletType
+    damage: 12
+  }
+
+  ethene: {
+    type: BombBulletType
+    damage: 26
+  }
+}
+requirements: [
+  silver/40
+  copper/70
+]
+category: turret
+research: duo

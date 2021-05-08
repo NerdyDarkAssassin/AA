@@ -1,0 +1,7 @@
+type: material
+name: Sulphur
+description: A rare resource.
+flammability: 1.5
+hardness: 2
+cost: 2
+color: ffffff

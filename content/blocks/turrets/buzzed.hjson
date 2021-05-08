@@ -1,0 +1,164 @@
+type: itemTurret
+name: Buzzed
+description: lol
+health: 400
+size: 2
+range: 500
+inaccuracy: 0.5
+rotatespeed: 5
+shootSound: gun
+heatColor:FFFFFF
+reload: 720
+xrand: 600
+targetAir: true
+TargetGround: true
+
+
+ammoTypes: {
+
+
+  phase-fabric: {              
+              type: BasicBulletType
+              speed: 20f
+              damage: 1
+	      splashDamage: 0
+	      splashDamageRadius: 50
+              frontColor: ff0000
+              backColor: ff0000
+              bulletWidth: 8f
+              bulletHeight: 8f
+	      homingRange: 500
+              homingPower: 8 
+              collidesAir: true
+              collidesGround: true
+              status: burning
+              statusDuration: 1000
+              explodeRange: 50
+              lifetime: 10f
+	      fragCone: 45.0
+              fragBullet: {
+                          type: flakBulletType
+                          speed: 20f
+                          damage: 1
+	                  splashDamage: 0
+	                  splashDamageRadius: 50
+                          collidesAir: true
+              		  collidesGround: true
+                          frontColor: ff0000
+                          backColor: ff0000
+                          bulletWidth: 8f
+                          bulletHeight: 8f
+	                  homingRange: 50
+                          homingPower: 8 
+                          status: burning
+                          statusDuration: 1000
+                          } fragBullets: 30
+                
+           }
+           
+  surge-alloy: {              
+              type: flakBulletType
+              speed: 20f
+              damage: 1
+	      splashDamage: 0
+	      splashDamageRadius: 500
+              frontColor: 00ffff
+              backColor: 00ffff
+              bulletWidth: 8f
+              bulletHeight: 8f
+	      homingRange: 500
+              homingPower: 8
+              status: freezing
+              statusDuration: 1000
+              explodeRange: 50
+              lifetime: 10f 
+              fragBullet: {
+                          type: flakBulletType
+                          speed: 20f
+                          damage: 1
+	                  splashDamage: 0
+	                  splashDamageRadius: 500
+                          frontColor: 00ffff
+                          backColor: 00ffff
+                          bulletWidth: 8f
+                          bulletHeight: 8f
+	                  homingRange: 500
+                          homingPower: 8 
+                          status: freezing
+                          statusDuration: 1000
+                          } fragBullets: 120 
+           }
+
+  metaglass: {              
+              type: flakBulletType
+              speed: 20f
+              damage: 1
+	      splashDamage: 0
+	      splashDamageRadius: 500
+              frontColor: 0000ff
+              backColor: 0000ff
+              bulletWidth: 8f
+              bulletHeight: 8f
+	      homingRange: 500
+              homingPower: 8
+              status: wet
+              statusDuration: 1000
+              explodeRange: 50
+              lifetime: 10f 
+              fragBullet: {
+                          type: flakBulletType
+                          speed: 20f
+                          damage: 1
+	                  splashDamage: 0
+	                  splashDamageRadius: 500
+                          frontColor: 0000ff
+                          backColor: 0000ff
+                          bulletWidth: 8f
+                          bulletHeight: 8f
+	                  homingRange: 500
+                          homingPower: 8 
+                          status: wet
+                          statusDuration: 1000
+                          } fragBullets: 120 
+           }
+
+  plastanium: {              
+              type: flakBulletType
+              speed: 20f
+              damage: 1
+	      splashDamage: 0
+	      splashDamageRadius: 500
+              frontColor: ffff00
+              backColor: ffff00
+              bulletWidth: 8f
+              bulletHeight: 8f
+	      homingRange: 500
+              homingPower: 8
+              status: shocked
+              statusDuration: 1000
+              explodeRange: 50
+              lifetime: 10f
+              fragBullet: {
+                          type: flakBulletType
+                          speed: 20f
+                          damage: 1
+	                  splashDamage: 0
+	                  splashDamageRadius: 500
+                          frontColor: ffff00
+                          backColor: ffff00
+                          bulletWidth: 8f
+                          bulletHeight: 8f
+	                  homingRange: 500
+                          homingPower: 8 
+                          status: shocked
+                          statusDuration: 1000
+                          } fragBullets: 120 
+	     }
+
+}
+requirements: [
+  silver/40
+  copper/70
+]
+category: turret
+research: duo

@@ -1,0 +1,75 @@
+type: itemTurret
+name: Satellite
+description: lol
+health: 400
+size: 2
+range: 1000
+inaccuracy: 0.00
+rotatespeed: 5
+shootSound: gun
+heatColor:000000
+burstSpacing:100f
+shots: 1
+reload: 600
+xRand: 40
+targetAir: true
+targetGround: true
+ammoTypes: {
+
+    mgsic: {
+              type: flakBulletType
+              speed: 0.25f
+              damage: 5
+              bulletWidth: 5
+              bulletHeight: 12
+              lifetime: 2000f
+              explodeRange: 100       
+              homingPower:0.25
+              homingRange: 500  
+              collidesAir: true
+              collidesGround: true     
+              frontColor: ffffff
+              backColor: 585858
+              fragBullet: {
+                       type: missileBulletType
+                       damage: 50
+                       speed: 4f
+                       lifetime: 160f
+                       statusEffect: burning
+                       homingPower:0.25
+                       homingRange: 500
+                       splashDamageRadius: 10f
+                       splashDamage: 10f
+                          } fragBullets: 30
+           } 
+
+  masurge: {              
+              type: flakBulletType
+              speed: 0.25f
+              damage: 5
+              bulletWidth: 5
+              bulletHeight: 12
+              lifetime: 2000f
+              backColor: 585858
+              frontColor: ffffff
+              explodeRange: 100   
+              collidesTeam: true
+              collidesTiles: false           
+              fragBullet: {
+                       type: laserBoltBulletType
+                       speed: 4f
+                       damage: 35
+                       lifetime: 160f
+                       homingPower:1
+                       homingRange: 500
+                       collidesTeam: true
+                          } fragBullets: 30
+           }
+
+}
+requirements: [
+  silver/40
+  copper/70
+]
+category: turret
+research: duo

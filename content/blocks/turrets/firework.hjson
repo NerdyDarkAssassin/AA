@@ -1,0 +1,37 @@
+type: ItemTurret
+name: Firework
+description: lol
+health: 400
+size: 2
+range: 200
+inaccuracy: 0.00
+rotatespeed: 5
+burstSpacing: 1
+shootSound: gun
+heatColor:FFFFFF
+
+ammo: {
+
+    plastanium: {
+              speed: 200
+              damage: 60
+              bulletWidth: 5
+              bulletHeight: 12
+              ammoMultiplier: 4
+              backColor: ac7349
+              frontColor: dcd16b
+              fragBullet: {
+                        type: bombBulletType
+                        damage: 32
+                        lifetime:7
+                        speed: 30
+                          } fragBullets: 1000
+                  }
+
+}
+requirements: [
+  silver/40
+  copper/70
+]
+category: turret
+research: duo

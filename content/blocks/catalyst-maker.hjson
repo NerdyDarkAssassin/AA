@@ -1,0 +1,25 @@
+type: GenericSmelter
+name: Catalyst Maker
+description: Burns Magnesium to make a catalyst
+liquidCapacity: 50
+size: 2
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 120
+updateEffect: burning
+consumes: {
+  power: 0.7
+  item: magnesium
+}
+requirements: [
+  lead/50
+  thorium/80
+  silicon/60
+  silver/50
+]
+category: crafting
+research: silver-crucible
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: catalyst/1

@@ -1,0 +1,8 @@
+type: resource
+name: Alloy-C
+description: A rare resource.
+hardness: 2
+cost: 2
+radioactivity: 0.35
+explosiveness: 50
+color: ffffff

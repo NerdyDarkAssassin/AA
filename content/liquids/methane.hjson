@@ -1,0 +1,7 @@
+name: Methane
+description: Methane gas. Can be burned for energy or used to make superglue.
+flammability: 0.5
+temperature: 0.3
+viscosity: 0.1
+effect: melting
+color: a4a2bd

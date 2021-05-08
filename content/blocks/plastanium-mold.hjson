@@ -1,0 +1,30 @@
+type: GenericCrafter
+name: Plastanium Mold
+description: Solidifies Plastanium
+liquidCapacity: 50
+size: 2
+hasPower: false
+hasLiquids: true
+hasItems: true
+craftTime: 60
+updateEffect: missileTrail
+consumes: {
+  liquid: {
+    liquid: liquid-plastanium
+    amount: 0.25
+  }
+}
+requirements: [
+  lead/50
+  thorium/80
+  silicon/60
+  silver/50
+]
+category: crafting
+research: silver-crucible
+idleSound: respawning
+idleSoundVolume: 0.5
+outputItem: {
+  item: plastanium
+  amount: 4
+}

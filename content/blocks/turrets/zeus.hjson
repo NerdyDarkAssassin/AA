@@ -1,0 +1,46 @@
+type: ItemTurret
+name: Zeus
+description: lol
+health: 400
+size: 2
+range: 500
+inaccuracy: 0.5
+rotatespeed: 5
+heatColor:FFFFFF
+spread: 400
+shootSound: spark
+shootEffect: landShock
+
+ammoTypes: {
+
+
+  masurge: {
+            damage: 35
+            speed: 40f
+            bulletWidth:8f
+            bulletHeight:8f
+            bulletShrink:0f
+            drag:-0.01f
+            splashDamageRadius:30f
+            splashDamage:22f
+            lifetime:10f
+            hitEffect: blastExplosion
+            despawnEffect:blastExplosion
+            lightning:10
+            lightningLength:50
+	    lightningDamage: -1.0
+	    lightningColor: ff0000
+            status: disarmed
+            statusDuration: 1000
+           }
+   
+
+    
+
+}
+requirements: [
+  silver/40
+  copper/70
+]
+category: turret
+research: duo

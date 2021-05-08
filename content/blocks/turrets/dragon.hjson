@@ -1,0 +1,81 @@
+type: ItemTurret
+name: Dragon
+description: lol
+reloadTime: 20
+range: 200
+size: 2
+burstSpacing: 1
+shots: 6
+health: 400
+inaccuracy: 0.5
+rotatespeed: 5
+shootSound: gun
+heatColor:FFFFFF
+
+ammoTypes: {
+
+
+  maround: {
+    speed: 20.0
+    damage: 60
+    bulletWidth: 10
+    bulletHeight: 25
+    shootEffect: plasticburn
+    hitEffect: lightningShoot
+    status: melting 
+    sratusDuration: 10000
+    ammoMultiplier: 6
+    backColor: ac7349
+    frontColor: dcd16b
+    fragBullet: {
+                 type: liquidBulletType
+                 liquid: oil
+                 lifetime: 100
+                } fragBullets: 100
+            }
+   mgal-flakes: {
+          speed: 5
+          type: missileBulletType
+          lifetime: 2000
+	  damage: 50
+          fragBullet: {
+                       type: liquidBulletType
+                       liquid: molten-magnesium
+                       lifetime: 100
+                      } fragBullets: 100
+                       
+                 }
+
+    plastanium: {
+              speed: 15
+              damage: 5
+              bulletWidth: 5
+              bulletHeight: 12
+              shootEffect: plasticburn
+              hitEffect: lightningShoot
+              ammoMultiplier: 4
+              backColor: ac7349
+              frontColor: dcd16b
+              fragBullet: {
+                        type: liquidBulletType
+                        liquid: oil
+                        lifetime: 10
+                          } fragBullets: 100
+          }
+
+    surge-alloy: {
+                  type: liquidBulletType
+                  liquid: liquid-surge
+                  lightining:10
+                  lightningLength:10
+                }     
+
+}
+
+requirements: [
+  silver/40
+  copper/70
+]
+
+category: turret
+research: duo

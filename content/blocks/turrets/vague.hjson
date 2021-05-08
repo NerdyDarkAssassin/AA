@@ -1,0 +1,26 @@
+type: ItemTurret
+name: vague
+description: vague
+heatColor: 00ff00
+health: 200
+size: 2
+reload: 4
+range: 1000
+inaccuracy: 2
+rotatespeed: 12
+ammoTypes: {
+
+  surge-alloy: {
+               bulletType: missileBulletType
+               fragBullet: {
+			bulletType: laserBulletType
+                           }
+               fragBullets: 15
+}
+}
+requirements: [
+  silver/40
+  copper/70
+]
+category: turret
+research: duo

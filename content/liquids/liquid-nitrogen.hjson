@@ -1,0 +1,8 @@
+name: Liquid Nitrogen
+description: 
+flammability: 0.5
+temperature: 0.05
+heatCapacity: 1.5
+viscosity: 0.1
+effect: freezing
+color: a4a2bd

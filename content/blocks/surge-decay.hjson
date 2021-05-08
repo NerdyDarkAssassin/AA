@@ -1,0 +1,37 @@
+type: NuclearReactor
+name: Power Surge
+description: Uses Surge Alloy to do Boom Boom.
+size: 3
+
+lightColor: ff0800
+coolColor: 000000
+hotColor: ffffff
+itemDuration: 200
+heating: 0.005
+smokeThreshold: 0.6
+explosionRadius: 0
+explosionDamage: 0
+flashThreshold: 0.92
+coolantPower: 1
+itemCapacity: 1
+liquidCapacity: 30
+hasItems: true
+hasLiquids: true
+rebuildable: true
+powerProduction: 15
+consumes: { 
+          items: { 
+          items: [surge-alloy/1]
+          } 
+          liquid: {
+          liquid: liquid-surge
+          }
+}
+
+requirements: [
+  metaglass/80
+  silicon/60
+  electrum/50
+]
+category: power
+research: silver-crucible

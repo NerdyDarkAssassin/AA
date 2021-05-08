@@ -1,0 +1,5 @@
+type: resource
+name: MgAl Round
+description: A round made from MgAl Alloy. Sparks and melts your enemies.
+color: ffffff
+flammability: 1

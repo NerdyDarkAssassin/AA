@@ -1,0 +1,23 @@
+name: Magnesium Drill
+description: A drill that Uses molten magnesium to drill faster.
+type: Drill
+size: 3
+tier: 3
+drillTime: 150
+consumes: {
+  power: 4
+  liquid: {
+    liquid: liquid-nitrogen
+    amount: 0.125
+    booster: true
+    optional: true
+}
+}
+requirements: [
+  magnesium/200
+  silicon/50
+  graphite/40
+  aluminum/150
+]
+category: production
+research: laser-drill

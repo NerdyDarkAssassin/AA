@@ -1,0 +1,5 @@
+type: resource
+name: Magnesium Ore
+description: Ore of Magnesium
+hardness: 3
+color: ffffff
