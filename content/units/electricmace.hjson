@@ -1,0 +1,42 @@
+type: mech
+speed: 0.45
+health: 300
+range: 48
+armor: 3
+weapons: [
+    {
+        name: electric-small-shotgun1
+        top: true
+        shootY: 5
+        reload: 45
+        bullet: {
+            type: LaserBoltBulletType
+      	    damage: 40
+      	    speed: 12f
+            lifetime: 20f
+            healPercent: 100f
+            fragBullet: {
+            	type: SapBulletType
+         	sapStrength: 111
+         	length: 0.1
+         	width: 0.1
+         	}
+      	    fragBullets: 1
+            lightning:25
+            lightningLength:25
+      	    lightningDamage: 0
+            lightningColor: 000000
+            frontColor: ffffff
+            backColor: ff0000
+            status: {
+        	name: Inanimated    
+        	damage: 0
+        	speedMultiplier: 0
+        	effectChance: 1.0
+        	disarm: true
+        	}
+      	    statusDuration: 500
+     }
+  }
+]
+research: electric-additive-reconstructor

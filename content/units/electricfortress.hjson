@@ -1,0 +1,61 @@
+type: mech
+speed: 0.3
+health: 500
+range: 120
+rotateSpeed: 2.85
+weapons: [
+    {
+        name: electric-small-shotgun1
+        top: true
+        shake: 2.2
+        shootY: 5
+        x: 9
+        y: 2
+        reload: 30
+        shots: 2
+        shotDelay: 0.5
+        ejectEffect: none
+        shootSound: spark
+        bullet: {
+            type: MissileBulletType
+            damage: 20
+	    pierce: true
+	    pierceBuilding: true
+            pierceCap: 1
+            makeFire: true
+            puddles: 10
+            puddleRange: 10
+            puddleAmount: 10
+            puddleLiquid: oil
+            status: freezing
+            speed: 4
+        }
+    },
+    {
+        name: electric-middle-laser1
+        top: true
+        shake: 2
+        shootY: 4
+        x: 6
+        y: -2
+        reload: 30
+        recoil: 4
+        shootSound: laser
+        bullet: {
+            type: MissileBulletType
+            damage: 20
+	    pierce: true
+	    pierceBuilding: true
+            pierceCap: 1
+            makeFire: true
+            puddles: 10
+            puddleRange: 10
+            puddleAmount: 10
+            puddleLiquid: molten-magnesium
+            status: blasted
+            speed: 4
+        }
+    }
+]
+
+research: electric-multiplicative-reconstructor

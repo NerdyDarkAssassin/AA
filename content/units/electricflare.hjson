@@ -1,0 +1,33 @@
+type: flying
+flying: true
+speed: 3f
+accel: 0.08f
+drag: 0.01f
+flying: true
+health: 75
+engineOffset: 5.5f
+range: 140f
+targetAir: false
+commandLimit: 4
+circleTarget: true
+
+weapons: [
+  {
+    name: none
+    reload: 360f
+    bullet: {
+      type: LaserBulletType
+      colors: [88a4ff, 5757c1, ffffff]
+      damage: 120
+    }
+  }
+]
+research: {
+    parent: electric-factory
+    requirements:
+    [
+        {item: surge-alloy, amount: 6000},
+        {item: plastanium, amount: 50000},
+        {item: silicon, amount: 100000}
+    ]
+}

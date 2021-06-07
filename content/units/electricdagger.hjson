@@ -1,0 +1,39 @@
+type: mech
+speed: 0.45
+health: 250
+weapons: [
+    {
+        name: electric-small-gun1
+        top: false
+        x: 4
+        y: 2
+        reload: 15
+        bullet: {
+            	type: LaserBoltBulletType
+      	    	damage: 35
+      	    	speed: 20f
+      	    	splashDamageRadius: 30f
+      	    	splashDamage:22f
+      		lifetime:10
+      		lightning:10
+      		lightningLength:50
+      		lightningDamage:35
+      		healPercent: 15f
+      		lightningColor: 55ff55
+      		collidesTeam: true
+                lightningType: {
+                	type: MissileBulletType
+			}
+        }
+    }
+]
+
+research: {
+    parent: electric-factory
+    requirements:
+    [
+        {item: surge-alloy, amount: 6000},
+        {item: plastanium, amount: 50000},
+        {item: silicon, amount: 100000}
+    ]
+}

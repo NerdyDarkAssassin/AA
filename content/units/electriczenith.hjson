@@ -1,0 +1,29 @@
+type: flying
+
+health: 700
+speed: 1.8f
+accel: 0.04f
+drag: 0.016f
+flying: true
+range: 140f
+hitSize: 20f
+lowAltitude: true
+armor: 5f
+
+engineOffset: 12f
+engineSize: 3f
+
+weapons: [
+    {
+        name: zenith-missiles
+        reload: 40f
+        x: 7f
+        rotate: true
+        shots: 2
+        velocityRnd: 0.2
+        bullet: {
+            type: MissileBulletType
+     }
+  }
+]
+research: electric-multiplicative-reconstructor

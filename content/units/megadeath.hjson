@@ -1,0 +1,71 @@
+health: 800
+speed: 2.5f
+accel: 0.08
+drag: 0.016
+range: 140
+hitSize: 15f
+armor: 5
+mineTier: 3
+canHeal: true
+flying: true
+buildSpeed: 2.60
+mineSpeed: 4.00
+name: MegaDeath
+rotateShooting: false
+
+type: flying
+controller: repairAI
+
+engineOffset: 10.5f
+engineSize: 3
+
+weapons: [
+  {
+    name: heal-weapon-mount
+    top: true
+    reload: 30
+    rotate: true
+    x: 8f
+    y: -6f
+    bullet: {
+      type: MissileBulletType
+      speed: 6
+      damage: 25
+      width: 5
+      height: 8
+      homingRange: 60
+      keepVelocity: false
+      healPercent: 7.5f
+      splashDamageRadius: 5
+      splashDamage: 10
+      lifetime: 70f
+      trailColor: ffffff
+      backColor: ffffff
+      frontColor: 55ff55
+      weaveScale: 0
+      weaveMag: 0
+      collidesTeam: true
+      collidesTiles: true
+    }
+  }, 
+{ 
+    name: none
+    rotate: true
+    reload: 2500
+    x: 0f
+    y: 0f
+    continuous: true
+    bullet: {
+      type: ContinuousLaserBulletType
+      damage: 1
+      width: 3
+      length: 100
+      colors: [01ff7755, ff0000ff, 01ff77ff, 44ff44ff]
+      lifetime: 200
+      healPercent: 0.83f
+      collidesTeam: true
+      collidesTiles: true
+     }
+  }   
+]
+research: electric-multiplicative-reconstructor

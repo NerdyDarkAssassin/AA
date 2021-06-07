@@ -1,0 +1,71 @@
+type: flying
+flying: true
+drag:0.05f  
+speed: 2.6f  
+rotateSpeed: 15f  
+accel: 0.1f  
+range: 130f  
+health: 400  
+buildSpeed: 0.5f  
+engineOffset: 6.5f  
+hitSize: 8f 
+
+controller: builderAI
+
+abilities: [
+  {
+    type: ForceFieldAbility
+    amount: 1.0f
+    reload: 50
+    range: 50
+  },
+  {
+    type: RepairFieldAbility
+    amount: 2
+    reload: 50
+    range: 50
+  },
+  {
+    type: StatusFieldAbility
+    duration: 50
+    reload: 50
+    range: 50
+    effect: overclock
+  }
+]
+
+weapons: [
+  {
+    name: heal-weapon-mount
+    top: true
+    y: -2.5f
+    x: 3.5f
+    reload: 150f
+    shots: 1
+    alternate: true
+    bullet: {
+      type: LaserBoltBulletType
+      homingPower: 0.08f
+      lifetime: 150f
+      keepVelocity: false
+      shootEffect: shootHeal
+      smokeEffect: hitLaser
+      hitEffect: hitLaser
+      despawnEffect: hitLaser
+      frontColor: ffffff
+      healPercent: 11f
+      collidesTeam: true
+      backColor: 44ff44
+      trailColor: 44ff44
+      speed: 5f
+      fragBullet: {
+                 type: SapBulletType
+                 Length: 100
+                 sapStrength: 9
+                 color: ffffff
+                }
+      fragBullets: 6
+    }
+  }
+]
+research: electric-additive-reconstructor
